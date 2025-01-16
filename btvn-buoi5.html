@@ -31,40 +31,74 @@
         .social-icons{
             display:flex;
             gap:15px;
-            padding-left:1300px;
+            padding-left:1260px;
             margin-top:-34px;
         }
         .social-icons a{
             font-size: 15px;
             color: #000;
+            padding-left:15px;
             text-decoration: none;
         }
         .social-icons a:hover{
-            color:blue;
+            color:dodgerblue;
         }
         body{
             font-family: Arial,sans-serif;
         }
         .email-form{
             padding-left:40px;
-            margin-top:40px;
+            margin-top:50px;
             font-size:16px;
         }
-        .center-image1{
-            margin-left:650px;
-            margin-top:-380px;
+        .vv{
+            margin-left:-16px;
+            margin-top:38px;
         }
 
+        .text-overlay{
+            position: absolute;
+            margin-top:-630px;
+        }
+        .blurred-text{
+            opacity: 0.5;
+        }
+        .subscribe-container{
+            display:flex;
+            align-items:center;
+            background-color:white;
+            border: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0,2);
+        }
+        .subscribe-input{
+            border:none;
+            outline:none;
+            margin-left:27px;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .subscribe-container{
+            border-radius: 30px;
+            width:470px;
+            height:55px;
+        }
+        .background-color button :hover{
+            color:dodgerblue;
+        }
+        #background-color{
+            margin-left:100px;
+
+        }
     </style>
 </head>
 <body>
+
 <div class="center-image">
     <a bref="https://vn.images.search.yahoo.com/search/images;_ylt=AwrKC1oot4dnKQIAordrUwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=logo+kucra&fr2=piv-web&type=E210VN714G0&fr=mcafee#id=126&iurl=http%3A%2F%2Fwww.vinakura.com%2FStoreData%2FAds%2F81%2Flogo-kura.png&action=click">
         <img src="http://www.vinakura.com/StoreData/Ads/81/logo-kura.png" width=140 height=40>
     </a>
 </div>
 <header>
-
     <nav>
         <div class="menu">
             <ul style="display: flex; align-items: center;list-style: none;">
@@ -81,29 +115,38 @@
         </div>
     </nav>
 <div class="social-icons">
-    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.facebook.com/nguyenthinh987" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 
 </header>
 <main>
-<section>
-    <h1 style="margin-left:40px;font-size:18px;margin-top:140px;color:dodgerblue;">A W E S O M E</h1>
-    <p style="margin-left:40px;font-size:40px;margin-top:30px;">We are Startup Creative<br>Kucra Agency</p>
-    <p style="font-size:19px;padding-left:40px;">Carefully crafter after analyzing the needs of different<br>industries anh the design achieves a great balance<br>
-    between purpose & presentation.</p>
-    <form class="email-form">
-        <label>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit"><span style="color:red;"><b>Start</b></span></button>
-        </label>
-    </form>
-</section>
-    <div class="center-image1">
-        <img src="C:\Users\Lenovo\OneDrive\Pictures\z6232485040654_b74fa690799615eb52a4df0132959373.jpg" width=800 height=530>
-    </div>
+    <div class="container">
+        <div class="vv">
+            <img src="C:\Users\Lenovo\OneDrive\Pictures\057a7d03-bb44-4368-b1d5-238d6823e948.jpg" width=1570 height=630>
+        </div>
+        <div class="text-overlay">
 
+            <section>
+                <h1 style="margin-left:40px;font-size:18px;margin-top:140px;color:dodgerblue;">A W E S O M E</h1>
+                <p style="margin-left:40px;font-size:40px;margin-top:30px;"><b>We are Startup<br>Creative Kucra Agency</b></p>
+                <div class="blurred-text">
+                    <p style="font-size:19px;padding-left:40px;">Carefully crafter after analyzing the needs of different<br>industries anh the design achieves a great balance<br>
+                        between purpose & presentation.</p>
+                </div>
+                <form class="email-form">
+                    <div class="subscribe-container">
+                        <input type="email" class="subscribe-input" placeholder="Enter your email">
+                        <div id="background-color">
+                            <button><span style="color:black;"><b>SUBSCRIBE</b></span></button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
 </main>
 </body>
 </html>
