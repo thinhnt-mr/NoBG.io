@@ -8,16 +8,17 @@
   <title>Tạo MENU website</title>
   <style>
     .center-image{
-      padding-left:43px;
-      margin-top:25px;
+      padding-left:100px;
+      margin-top:20px;
+      padding-bottom:8px;
     }
     .menu a{
       text-decoration: none;
-      font-size:16px;
+      font-size:14px;
       color: black;
     }
     .menu {
-      margin-top:-50px;
+      margin-top:-55px;
     }
 
     .menu a:hover{
@@ -31,11 +32,11 @@
     .social-icons{
       display:flex;
       gap:15px;
-      padding-left:1235px;
+      padding-left:1190px;
       margin-top:-34px;
     }
     .social-icons a{
-      font-size: 14px;
+      font-size: 13px;
       color: #000;
       text-decoration: none;
 
@@ -58,7 +59,7 @@
 
     .text-overlay{
       position: absolute;
-      margin-top:-620px;
+      margin-top:-567px;
     }
     .blurred-text{
       opacity: 0.5;
@@ -68,8 +69,8 @@
       align-items:center;
       background-color:white;
       border: 10px;
-      box-shadow: 0 2px 5px;
-      margin-left:10px;
+      box-shadow: 0 0.5px;
+      margin-left:54px;
     }
     .subscribe-input{
       border:none;
@@ -83,27 +84,63 @@
       width:470px;
       height:55px;
     }
+    .menu-button:hover{
+      color:dodgerblue;
+    }
+    .menu-button{
+      border:none;
+      background-color:white;
+      font-size:16px;
+    }
+    .dropdown-menu{
+      display:none;
+      position:absolute;
+      top:68px;
+      left:964px;
+      background-color:white;
+      box-shadow: 0 ;
+      z-index:1000;
+      width:175px;
+      height:108px;
+      border-radius:5px;
+    }
+    .dropdown-menu p {
+      font-size:14px;
+      margin-left:18px;
+    }
+    .dropdown-menu p:hover{
+      color:dodgerblue;
+    }
   </style>
 </head>
 <body>
 
 <div class="center-image">
   <a bref="https://vn.images.search.yahoo.com/search/images;_ylt=AwrKC1oot4dnKQIAordrUwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=logo+kucra&fr2=piv-web&type=E210VN714G0&fr=mcafee#id=126&iurl=http%3A%2F%2Fwww.vinakura.com%2FStoreData%2FAds%2F81%2Flogo-kura.png&action=click">
-    <img src="http://www.vinakura.com/StoreData/Ads/81/logo-kura.png" width=140 height=40>
+    <img src="http://www.vinakura.com/StoreData/Ads/81/logo-kura.png" width=100 height=30>
   </a>
 </div>
 <header>
   <nav>
     <div class="menu">
-      <ul style="display: flex; align-items: center;padding-left:220px;list-style: none;">
+      <ul style="display: flex; align-items: center;padding-left:212px;list-style: none;">
         <li> <a href="home.html"><span style="margin-left: 270px;color:dodgerblue">HOME</span></a></li>
         <li> <a href="features.html">FEATURES</a></li>
         <li> <a href="client.html">CLIENT</a></li>
         <li> <a href="pricing.html">PRICING</a></li>
         <li> <a href="faq.html">FAQ</a></li>
         <li> <a href="about.html">ABOUT</a></li>
-        <li> <a href="blog.html">BLOG </a></li>
-        <li> <a href="contact.html"><span style="margin-left:16px;">CONTACT</span></a></li>
+        <div class="menu-container">
+          <button class="menu-button">BLOG</button>
+
+          <div class="dropdown-menu">
+            <p>BLOG </p>
+            <p>BLOG LIST </p>
+            <p>BLOG DETAILS </p>
+          </div>
+        </div>
+
+        <li> <a href="contact.html"><span style="margin-left:47px;">CONTACT</span></a></li>
 
       </ul>
     </div>
@@ -118,15 +155,15 @@
 <main>
   <div class="container">
     <div class="vv">
-      <img src="C:\Users\Lenovo\OneDrive\Pictures\057a7d03-bb44-4368-b1d5-238d6823e948.jpg" width=1510 height=570>
+      <img src="C:\Users\Lenovo\OneDrive\Pictures\057a7d03-bb44-4368-b1d5-238d6823e948.jpg" width=1500 height=590>
     </div>
 
     <div class="text-overlay">
       <section>
-        <h1 style="margin-left:50px;font-size:18px;margin-top:140px;color:dodgerblue;">A W E S O M E</h1>
-        <p style="margin-left:50px;font-size:40px;margin-top:30px;"><b>We are Startup<br>Creative Kucra Agency</b></p>
+        <h1 style="margin-left:100px;font-size:15px;margin-top:140px;color:dodgerblue;">A W E S O M E</h1>
+        <p style="margin-left:100px;font-size:37px;margin-top:30px;"><b>We are Startup<br>Creative Kucra Agency</b></p>
         <div class="blurred-text">
-          <p style="font-size:19px;padding-left:50px;">Carefully crafter after analyzing the needs of different<br>industries anh the design achieves a great balance<br>
+          <p style="font-size:19px;padding-left:100px;">Carefully crafter after analyzing the needs of different<br>industries anh the design achieves a great balance<br>
             between purpose & presentation.</p>
         </div>
         <form class="email-form">
@@ -134,7 +171,7 @@
             <input type="email" class="subscribe-input" placeholder="Enter your email">
             <div>
               <button style=" margin-left:74px;width: 140px;height: 43px;border-radius: 20px; border:none;
-                            outline:none; background-color: dodgerblue"><span style="color:white;"><b>SUBSCRIBE</b></span></button>
+                            outline:none; background-color: dodgerblue"><span style="color:white;font-size:16px;">SUBSCRIBE</span></button>
             </div>
 
           </div>
@@ -142,10 +179,26 @@
       </section>
     </div>
   </div>
-  <div style="margin-left:1062px;margin-top:-616px;">
-    <img src="C:\Users\Lenovo\OneDrive\Pictures\taoanhdep_nang_cap_anh_50641.jpeg" width="10" height="10">
+  <div style="margin-left:1016px;margin-top:-637px;">
+    <img src="C:\Users\Lenovo\OneDrive\Pictures\taoanhdep_nang_cap_anh_50641.jpeg" width="10" height="9">
   </div>
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
 
+    // Thêm sự kiện click vào nút
+    menuButton.addEventListener('click', () => {
+      // Chuyển đổi hiển thị menu
+      dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Đóng menu nếu click ra ngoài
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.menu-container')) {
+        dropdownMenu.style.display = 'none';
+      }
+    });
+  </script>
 </main>
 </body>
 </html>
